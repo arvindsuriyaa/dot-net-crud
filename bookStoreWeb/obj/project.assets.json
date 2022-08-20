@@ -3134,6 +3134,32 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "BookStoreWeb.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BookStoreWeb.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/BookStoreWeb.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookStoreWeb.Data.dll": {}
+        }
+      },
+      "BookStoreWeb.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BookStoreWeb.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookStoreWeb.Models.dll": {}
+        }
       }
     }
   },
@@ -9650,10 +9676,21 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "BookStoreWeb.Data/1.0.0": {
+      "type": "project",
+      "path": "../bookStoreWeb.data/BookStoreWeb.Data.csproj",
+      "msbuildProject": "../bookStoreWeb.data/BookStoreWeb.Data.csproj"
+    },
+    "BookStoreWeb.Models/1.0.0": {
+      "type": "project",
+      "path": "../bookStore.Models/BookStoreWeb.Models.csproj",
+      "msbuildProject": "../bookStore.Models/BookStoreWeb.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BookStoreWeb.Data >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 6.0.8",
       "Microsoft.EntityFrameworkCore >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
@@ -9687,7 +9724,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\arvind\\coding\\BookStore\\bookStoreWeb.data\\BookStoreWeb.Data.csproj": {
+              "projectPath": "E:\\arvind\\coding\\BookStore\\bookStoreWeb.data\\BookStoreWeb.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

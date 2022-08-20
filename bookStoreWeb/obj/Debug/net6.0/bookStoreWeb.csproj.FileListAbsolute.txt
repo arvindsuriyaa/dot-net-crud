@@ -551,3 +551,7 @@ E:\arvind\coding\BookStore\bookStoreWeb\obj\Debug\net6.0\refint\bookStoreWeb.dll
 E:\arvind\coding\BookStore\bookStoreWeb\obj\Debug\net6.0\bookStoreWeb.pdb
 E:\arvind\coding\BookStore\bookStoreWeb\obj\Debug\net6.0\bookStoreWeb.genruntimeconfig.cache
 E:\arvind\coding\BookStore\bookStoreWeb\obj\Debug\net6.0\ref\bookStoreWeb.dll
+E:\arvind\coding\BookStore\bookStoreWeb\bin\Debug\net6.0\BookStoreWeb.Data.dll
+E:\arvind\coding\BookStore\bookStoreWeb\bin\Debug\net6.0\BookStoreWeb.Models.dll
+E:\arvind\coding\BookStore\bookStoreWeb\bin\Debug\net6.0\BookStoreWeb.Data.pdb
+E:\arvind\coding\BookStore\bookStoreWeb\bin\Debug\net6.0\BookStoreWeb.Models.pdb

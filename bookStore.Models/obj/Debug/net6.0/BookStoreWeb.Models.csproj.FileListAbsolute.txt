@@ -1,0 +1,12 @@
+E:\arvind\coding\BookStore\bookStore.Models\bin\Debug\net6.0\BookStoreWeb.Models.deps.json
+E:\arvind\coding\BookStore\bookStore.Models\bin\Debug\net6.0\BookStoreWeb.Models.dll
+E:\arvind\coding\BookStore\bookStore.Models\bin\Debug\net6.0\BookStoreWeb.Models.pdb
+E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.csproj.AssemblyReference.cache
+E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.AssemblyInfoInputs.cache
+E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.AssemblyInfo.cs
+E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.csproj.CoreCompileInputs.cache
+E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.dll
+E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\refint\BookStoreWeb.Models.dll
+E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.pdb
+E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\ref\BookStoreWeb.Models.dll

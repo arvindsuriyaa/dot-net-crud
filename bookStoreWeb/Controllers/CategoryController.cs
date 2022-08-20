@@ -1,6 +1,8 @@
-﻿using bookStoreWeb.Data;
-using bookStoreWeb.Models;
+﻿
+using BookStoreWeb.Data;
+using BookStoreWeb.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
 namespace bookStoreWeb.Controllers
@@ -65,7 +67,7 @@ namespace bookStoreWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Category obj)
         {
-            var userDetails = _db.Categories.Where(u => u.Name == obj.Name).ToList();
+            var userDetails = _db.Categories.AsNoTracking().Where(u => u.Name == obj.Name).ToList();
             if (userDetails.Count>=2)
             {
                 ModelState.AddModelError("name", "Name already exist, Choose different Name");
@@ -111,9 +113,10 @@ namespace bookStoreWeb.Controllers
             }
             _db.Categories.Remove(userDetails);
             _db.SaveChanges();
+            _db.Dispose();
             TempData["Success"] = "Category successfully deleted";
             return RedirectToAction("Index");
-           
+
         }
 
     }
