@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\arvind\\coding\\BookStore\\bookStoreWeb\\bookStoreWeb.csproj": {}
+    "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\bookStoreWeb.csproj": {}
   },
   "projects": {
-    "E:\\arvind\\coding\\BookStore\\bookStore.Models\\BookStoreWeb.Models.csproj": {
+    "D:\\arvind\\coding\\dot-net-crud\\bookStore.Models\\BookStoreWeb.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\arvind\\coding\\BookStore\\bookStore.Models\\BookStoreWeb.Models.csproj",
+        "projectUniqueName": "D:\\arvind\\coding\\dot-net-crud\\bookStore.Models\\BookStoreWeb.Models.csproj",
         "projectName": "BookStoreWeb.Models",
-        "projectPath": "E:\\arvind\\coding\\BookStore\\bookStore.Models\\BookStoreWeb.Models.csproj",
-        "packagesPath": "C:\\Users\\Arvind\\.nuget\\packages\\",
-        "outputPath": "E:\\arvind\\coding\\BookStore\\bookStore.Models\\obj\\",
+        "projectPath": "D:\\arvind\\coding\\dot-net-crud\\bookStore.Models\\BookStoreWeb.Models.csproj",
+        "packagesPath": "C:\\Users\\audit\\.nuget\\packages\\",
+        "outputPath": "D:\\arvind\\coding\\dot-net-crud\\bookStore.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Arvind\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\audit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,21 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\arvind\\coding\\BookStore\\bookStoreWeb.data\\BookStoreWeb.Data.csproj": {
+    "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb.data\\BookStoreWeb.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\arvind\\coding\\BookStore\\bookStoreWeb.data\\BookStoreWeb.Data.csproj",
+        "projectUniqueName": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb.data\\BookStoreWeb.Data.csproj",
         "projectName": "BookStoreWeb.Data",
-        "projectPath": "E:\\arvind\\coding\\BookStore\\bookStoreWeb.data\\BookStoreWeb.Data.csproj",
-        "packagesPath": "C:\\Users\\Arvind\\.nuget\\packages\\",
-        "outputPath": "E:\\arvind\\coding\\BookStore\\bookStoreWeb.data\\obj\\",
+        "projectPath": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb.data\\BookStoreWeb.Data.csproj",
+        "packagesPath": "C:\\Users\\audit\\.nuget\\packages\\",
+        "outputPath": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb.data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Arvind\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\audit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +88,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\arvind\\coding\\BookStore\\bookStore.Models\\BookStoreWeb.Models.csproj": {
-                "projectPath": "E:\\arvind\\coding\\BookStore\\bookStore.Models\\BookStoreWeb.Models.csproj"
+              "D:\\arvind\\coding\\dot-net-crud\\bookStore.Models\\BookStoreWeb.Models.csproj": {
+                "projectPath": "D:\\arvind\\coding\\dot-net-crud\\bookStore.Models\\BookStoreWeb.Models.csproj"
               }
             }
           }
@@ -99,6 +105,12 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.8, )"
             },
@@ -126,21 +138,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\arvind\\coding\\BookStore\\bookStoreWeb\\bookStoreWeb.csproj": {
+    "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\bookStoreWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\arvind\\coding\\BookStore\\bookStoreWeb\\bookStoreWeb.csproj",
+        "projectUniqueName": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\bookStoreWeb.csproj",
         "projectName": "bookStoreWeb",
-        "projectPath": "E:\\arvind\\coding\\BookStore\\bookStoreWeb\\bookStoreWeb.csproj",
-        "packagesPath": "C:\\Users\\Arvind\\.nuget\\packages\\",
-        "outputPath": "E:\\arvind\\coding\\BookStore\\bookStoreWeb\\obj\\",
+        "projectPath": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\bookStoreWeb.csproj",
+        "packagesPath": "C:\\Users\\audit\\.nuget\\packages\\",
+        "outputPath": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Arvind\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\audit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -154,8 +166,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\arvind\\coding\\BookStore\\bookStoreWeb.data\\BookStoreWeb.Data.csproj": {
-                "projectPath": "E:\\arvind\\coding\\BookStore\\bookStoreWeb.data\\BookStoreWeb.Data.csproj"
+              "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb.data\\BookStoreWeb.Data.csproj": {
+                "projectPath": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb.data\\BookStoreWeb.Data.csproj"
               }
             }
           }
@@ -191,6 +203,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
             }
           },
           "imports": [
@@ -211,7 +227,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

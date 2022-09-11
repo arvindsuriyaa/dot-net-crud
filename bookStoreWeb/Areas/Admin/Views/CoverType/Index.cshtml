@@ -1,0 +1,38 @@
+﻿@model IEnumerable<CoverTypeModel>
+@{
+    ViewData["Title"] = "Index";
+}
+<partial name="_Notification"/>
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h1>Cover Type Index<h1>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-area="Admin" asp-controller="CoverType" asp-action="Create" class="btn btn-warning">Add Cover Type</a>
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped" style="width:100%">
+    <thead>
+        <tr><th>Cover type name</th></tr>
+    </thead>
+    <tbody>
+        <form method="post">
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td style="width:50%">@obj.Name</td>
+                <td style="width:50%">
+                    <a asp-controller="CoverType" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-warning">Edit</a>
+                </td>
+                <td style="width:50%">
+                    <a asp-controller="CoverType" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-light">Delete</a>
+                </td>
+            </tr>
+        }
+        </form>
+    </tbody>
+</table>
+

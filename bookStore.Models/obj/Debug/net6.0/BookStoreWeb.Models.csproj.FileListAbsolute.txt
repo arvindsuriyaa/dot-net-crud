@@ -10,3 +10,15 @@ E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models
 E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\refint\BookStoreWeb.Models.dll
 E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.pdb
 E:\arvind\coding\BookStore\bookStore.Models\obj\Debug\net6.0\ref\BookStoreWeb.Models.dll
+D:\arvind\coding\dot-net-crud\bookStore.Models\bin\Debug\net6.0\BookStoreWeb.Models.deps.json
+D:\arvind\coding\dot-net-crud\bookStore.Models\bin\Debug\net6.0\BookStoreWeb.Models.dll
+D:\arvind\coding\dot-net-crud\bookStore.Models\bin\Debug\net6.0\BookStoreWeb.Models.pdb
+D:\arvind\coding\dot-net-crud\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.csproj.AssemblyReference.cache
+D:\arvind\coding\dot-net-crud\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\arvind\coding\dot-net-crud\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.AssemblyInfoInputs.cache
+D:\arvind\coding\dot-net-crud\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.AssemblyInfo.cs
+D:\arvind\coding\dot-net-crud\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.csproj.CoreCompileInputs.cache
+D:\arvind\coding\dot-net-crud\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.dll
+D:\arvind\coding\dot-net-crud\bookStore.Models\obj\Debug\net6.0\refint\BookStoreWeb.Models.dll
+D:\arvind\coding\dot-net-crud\bookStore.Models\obj\Debug\net6.0\BookStoreWeb.Models.pdb
+D:\arvind\coding\dot-net-crud\bookStore.Models\obj\Debug\net6.0\ref\BookStoreWeb.Models.dll

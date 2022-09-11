@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace bookStoreWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220814155917_AddCategoryToDb")]
-    partial class AddCategoryToDb
+    [Migration("20220820110214_AddCategoryDB")]
+    partial class AddCategoryDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,7 +24,7 @@ namespace bookStoreWeb.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("bookStoreWeb.Models.Category", b =>
+            modelBuilder.Entity("BookStoreWeb.Models.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

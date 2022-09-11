@@ -1,17 +1,19 @@
 ﻿
 using BookStoreWeb.Data;
+using BookStoreWeb.Data.Repository.IRepository;
 using BookStoreWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-
+using System.Linq;
 namespace bookStoreWeb.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
-        private readonly ApplicationDbContext _db;
+        private readonly IUnitOfWork _db;
 
-        public CategoryController(ApplicationDbContext db)
+        public CategoryController(IUnitOfWork db)
         {
             _db = db;
         }
@@ -19,7 +21,7 @@ namespace bookStoreWeb.Controllers
         //GET Book
         public IActionResult Index()
         {
-            IEnumerable<Category> categoryList = _db.Categories;
+            IEnumerable<Category> categoryList = _db.Category.GetAll();
 
             return View(categoryList);
         }
@@ -41,8 +43,8 @@ namespace bookStoreWeb.Controllers
             }
             if (ModelState.IsValid)
             {
-                _db.Categories.Add(obj);
-                _db.SaveChanges();
+                _db.Category.Add(obj);
+                _db.Save();
                 TempData["Success"] = "Category successfully created";
                 return RedirectToAction("Index");
             }
@@ -57,7 +59,8 @@ namespace bookStoreWeb.Controllers
             {
                 return NotFound();
             }
-            var categoryFrmDb = _db.Categories.Find(id);
+            //var categoryFrmDb = _db.Categories.Find(id);
+            var categoryFrmDb = _db.Category.GetFirstOrDefault(item => item.Id == id);
 
             return View(categoryFrmDb);
         }
@@ -67,20 +70,21 @@ namespace bookStoreWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Category obj)
         {
-            var userDetails = _db.Categories.AsNoTracking().Where(u => u.Name == obj.Name).ToList();
-            if (userDetails.Count>=2)
+            List<Category> userDetails = _db.Category.GetRepo().Where(u => u.Name == obj.Name).ToList();
+            if (userDetails.Count >= 2)
             {
                 ModelState.AddModelError("name", "Name already exist, Choose different Name");
-
             }
+
             if (obj.Name == obj.DisplayOrder.ToString())
             {
                 ModelState.AddModelError("name", "Display Order cannot be Name");
             }
             if (ModelState.IsValid)
             {
-                _db.Categories.Update(obj);
-                _db.SaveChanges();
+
+                _db.Category.Update(obj);
+                _db.Save();
                 TempData["Success"] = "Category successfully edited";
                 return RedirectToAction("Index");
             }
@@ -96,7 +100,7 @@ namespace bookStoreWeb.Controllers
             {
                 return NotFound();
             }
-            var categoryFrmDb = _db.Categories.Find(id);
+            var categoryFrmDb = _db.Category.GetFirstOrDefault(item => item.Id == id);
 
             return View(categoryFrmDb);
         }
@@ -106,14 +110,13 @@ namespace bookStoreWeb.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int? id)
         {
-            var userDetails = _db.Categories.Find(id);
+            var userDetails = _db.Category.GetFirstOrDefault(item => item.Id == id);
             if (userDetails == null)
             {
                 return NotFound();
             }
-            _db.Categories.Remove(userDetails);
-            _db.SaveChanges();
-            _db.Dispose();
+            _db.Category.Remove(userDetails);
+            _db.Save();
             TempData["Success"] = "Category successfully deleted";
             return RedirectToAction("Index");
 

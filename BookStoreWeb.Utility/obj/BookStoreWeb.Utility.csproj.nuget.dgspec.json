@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\arvind\\coding\\BookStore\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj": {}
+    "D:\\arvind\\coding\\dot-net-crud\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj": {}
   },
   "projects": {
-    "E:\\arvind\\coding\\BookStore\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj": {
+    "D:\\arvind\\coding\\dot-net-crud\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\arvind\\coding\\BookStore\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj",
+        "projectUniqueName": "D:\\arvind\\coding\\dot-net-crud\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj",
         "projectName": "BookStoreWeb.Utility",
-        "projectPath": "E:\\arvind\\coding\\BookStore\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj",
-        "packagesPath": "C:\\Users\\Arvind\\.nuget\\packages\\",
-        "outputPath": "E:\\arvind\\coding\\BookStore\\BookStoreWeb.Utility\\obj\\",
+        "projectPath": "D:\\arvind\\coding\\dot-net-crud\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj",
+        "packagesPath": "C:\\Users\\audit\\.nuget\\packages\\",
+        "outputPath": "D:\\arvind\\coding\\dot-net-crud\\BookStoreWeb.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Arvind\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\audit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
