@@ -1,6 +1,6 @@
 ﻿
-using BookStoreWeb.Data;
-using BookStoreWeb.Data.Repository.IRepository;
+using BookStoreWeb.data;
+using BookStoreWeb.data.Repository.IRepository;
 using BookStoreWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

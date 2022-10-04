@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bookStoreWeb", "bookStoreWeb\bookStoreWeb.csproj", "{A3085FE3-EC3D-441A-941E-AA49919DE890}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStoreWeb", "bookStoreWeb\BookStoreWeb.csproj", "{A3085FE3-EC3D-441A-941E-AA49919DE890}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreWeb.Data", "bookStoreWeb.data\BookStoreWeb.Data.csproj", "{338F6E2C-FE83-4B18-BD5C-940154CA8021}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStoreWeb.Data", "bookStoreWeb.data\BookStoreWeb.Data.csproj", "{338F6E2C-FE83-4B18-BD5C-940154CA8021}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreWeb.Models", "bookStore.Models\BookStoreWeb.Models.csproj", "{2BCFB649-99AB-400D-910A-33EC20F88BD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStoreWeb.Models", "bookStore.Models\BookStoreWeb.Models.csproj", "{2BCFB649-99AB-400D-910A-33EC20F88BD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreWeb.Utility", "BookStoreWeb.Utility\BookStoreWeb.Utility.csproj", "{DCDA9C83-CBBD-4F84-B367-17E8557437F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStoreWeb.Utility", "BookStoreWeb.Utility\BookStoreWeb.Utility.csproj", "{DCDA9C83-CBBD-4F84-B367-17E8557437F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

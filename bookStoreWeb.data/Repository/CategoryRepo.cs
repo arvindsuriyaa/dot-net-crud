@@ -1,4 +1,5 @@
-﻿using BookStoreWeb.Data.Repository.IRepository;
+﻿using BookStoreWeb.data.Repository.IRepository;
+using BookStoreWeb.Data;
 using BookStoreWeb.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -7,8 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace BookStoreWeb.Data.Repository
+namespace BookStoreWeb.data.Repository
 {
     public class CategoryRepo : Repository<Category>, ICategory
     {

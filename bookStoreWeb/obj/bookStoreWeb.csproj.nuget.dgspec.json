@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\bookStoreWeb.csproj": {}
+    "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\BookStoreWeb.csproj": {}
   },
   "projects": {
     "D:\\arvind\\coding\\dot-net-crud\\bookStore.Models\\BookStoreWeb.Models.csproj": {
@@ -22,7 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -40,9 +41,43 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
             "Microsoft.AspNetCore.Mvc.ViewFeatures": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.10, )"
             }
           },
           "imports": [
@@ -51,7 +86,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -60,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -82,7 +118,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -104,23 +141,45 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[6.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[6.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[6.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.10, )"
             }
           },
           "imports": [
@@ -129,7 +188,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -138,16 +198,108 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\bookStoreWeb.csproj": {
+    "D:\\arvind\\coding\\dot-net-crud\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\bookStoreWeb.csproj",
-        "projectName": "bookStoreWeb",
-        "projectPath": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\bookStoreWeb.csproj",
+        "projectUniqueName": "D:\\arvind\\coding\\dot-net-crud\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj",
+        "projectName": "BookStoreWeb.Utility",
+        "projectPath": "D:\\arvind\\coding\\dot-net-crud\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj",
+        "packagesPath": "C:\\Users\\audit\\.nuget\\packages\\",
+        "outputPath": "D:\\arvind\\coding\\dot-net-crud\\BookStoreWeb.Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\audit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\BookStoreWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\BookStoreWeb.csproj",
+        "projectName": "BookStoreWeb",
+        "projectPath": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\BookStoreWeb.csproj",
         "packagesPath": "C:\\Users\\audit\\.nuget\\packages\\",
         "outputPath": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\obj\\",
         "projectStyle": "PackageReference",
@@ -160,7 +312,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -168,6 +321,9 @@
             "projectReferences": {
               "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb.data\\BookStoreWeb.Data.csproj": {
                 "projectPath": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb.data\\BookStoreWeb.Data.csproj"
+              },
+              "D:\\arvind\\coding\\dot-net-crud\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj": {
+                "projectPath": "D:\\arvind\\coding\\dot-net-crud\\BookStoreWeb.Utility\\BookStoreWeb.Utility.csproj"
               }
             }
           }
@@ -182,31 +338,39 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[6.0.9, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[6.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[6.0.9, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.8, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.3.0, )"
+              "version": "[6.0.10, )"
             }
           },
           "imports": [
@@ -215,7 +379,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -227,7 +392,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

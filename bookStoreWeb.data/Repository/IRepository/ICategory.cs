@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookStoreWeb.Data.Repository.IRepository
+namespace BookStoreWeb.data.Repository.IRepository
 {
     public interface ICategory : IRepository<Category>
     {

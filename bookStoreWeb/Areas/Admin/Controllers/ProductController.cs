@@ -1,6 +1,6 @@
 ﻿
-using BookStoreWeb.Data;
-using BookStoreWeb.Data.Repository.IRepository;
+using BookStoreWeb.data;
+using BookStoreWeb.data.Repository.IRepository;
 using BookStoreWeb.Models;
 using BookStoreWeb.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -70,7 +70,7 @@ namespace bookStoreWeb.Controllers
         //Post Created/Edited Form
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(ProductVM obj, IFormFile file)
+        public IActionResult Upsert(ProductVM obj, IFormFile? file)
         {
             if (ModelState.IsValid)
             {
@@ -110,7 +110,7 @@ namespace bookStoreWeb.Controllers
                 TempData["Success"] = "Category successfully created";
                 return RedirectToAction("Index");
             }
-            return View(obj);
+            return Upsert(obj.Product.Id);
         }
 
         #region API End points
@@ -126,7 +126,7 @@ namespace bookStoreWeb.Controllers
             var userDetails = _db.Products.GetFirstOrDefault(item => item.Id == id);
             if (userDetails == null)
             {
-                return Json(new { Error = true,message="Error while deleting"});
+                return Json(new { Error = true, message = "Error while deleting" });
             }
 
             var oldImageUrl = Path.Combine(_webHostEnvironment.WebRootPath, userDetails.ImageUrl.Trim('\\'));
@@ -137,7 +137,7 @@ namespace bookStoreWeb.Controllers
 
             _db.Products.Remove(userDetails);
             _db.Save();
-            return Json(new { Error = false,message="Delete success"});
+            return Json(new { Error = false, message = "Delete success" });
         }
         #endregion
 

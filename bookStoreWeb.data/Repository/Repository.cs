@@ -1,4 +1,5 @@
-﻿using BookStoreWeb.Data.Repository.IRepository;
+﻿using BookStoreWeb.data.Repository.IRepository;
+using BookStoreWeb.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookStoreWeb.Data.Repository
+namespace BookStoreWeb.data.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {

@@ -33,8 +33,8 @@ namespace BookStoreWeb.Models
         [Required]
         [Range(1, 10000)]
         public double Price100 { get; set; }
-        [ValidateNever]
 
+        [ValidateNever]
         public string ImageUrl { get; set; }
 
         [Required]

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookStoreWeb.Data.Repository.IRepository
+namespace BookStoreWeb.data.Repository.IRepository
 {
     public interface IUnitOfWork
     {
@@ -12,6 +12,7 @@ namespace BookStoreWeb.Data.Repository.IRepository
         void Save();
         ICoverType CoverType { get; }
         IProductRepository Products { get; }
+        ICompany Company { get; }
 
     }
 }
