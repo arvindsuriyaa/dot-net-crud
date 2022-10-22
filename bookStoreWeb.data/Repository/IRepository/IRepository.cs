@@ -9,7 +9,7 @@ namespace BookStoreWeb.data.Repository.IRepository
 {
     public interface IRepository<T> where T : class
     {
-        IEnumerable<T> GetAll(string? includeProp = null);
+        IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter=null, string? includeProp = null);
 
         void Add(T entity);
 

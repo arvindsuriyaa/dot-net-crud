@@ -1,8 +1,11 @@
 ﻿
+using BookStoreWeb.data.Repository;
 using BookStoreWeb.data.Repository.IRepository;
 using BookStoreWeb.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace bookStoreWeb.Controllers
 {
@@ -25,18 +28,46 @@ namespace bookStoreWeb.Controllers
             return View(productList);
         }
 
-        public IActionResult Details(int id)
+        public IActionResult Details(int productId)
         {
-
+            var cartDb = _db.ShoppingCart.GetFirstOrDefault(u => u.ProductId == productId);
+            var count = 1;
+            if(cartDb != null)
+            {
+                count = cartDb.Count;
+            }
             ShoppingCart cart = new ShoppingCart()
             {
-                Count = 0,
-                Product = _db.Products.GetFirstOrDefault(x => x.Id == id, includeProp: "Category,CoverType"),
+                Count = count,
+                ProductId = productId,
+                Product = _db.Products.GetFirstOrDefault(x => x.Id == productId, includeProp: "Category,CoverType"),
             };
 
-
-
             return View(cart);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public IActionResult Details(ShoppingCart cartObj)
+        {
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            cartObj.ApplicationUserId = claim.Value;
+
+            ShoppingCart cartData = _db.ShoppingCart.GetFirstOrDefault(u => u.ApplicationUserId == cartObj.ApplicationUserId && u.ProductId == cartObj.ProductId);
+
+            if (cartData == null)
+            {
+                _db.ShoppingCart.Add(cartObj);
+            }
+            else
+            {
+                cartData.Count = cartObj.Count;
+                _db.ShoppingCart.Update(cartData);
+            }
+            _db.Save();
+
+            return RedirectToAction("Index");
         }
 
 

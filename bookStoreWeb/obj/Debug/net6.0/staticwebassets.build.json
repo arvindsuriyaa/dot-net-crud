@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fE2I+QYbN9Qk5YatO1MNNuJHULMsACDzkVeldxoTgKA=",
+  "Hash": "ZFEuom2LVYlAUOX57RZDXarc1aIq9WleRLOYqRZPDfw=",
   "Source": "BookStoreWeb",
   "BasePath": "_content/BookStoreWeb",
   "Mode": "Default",
@@ -1120,6 +1120,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\wwwroot\\Images\\Products\\00ba1066-042d-433e-90c3-4c650c7c2f71.webp",
+      "SourceId": "BookStoreWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\wwwroot\\",
+      "BasePath": "_content/BookStoreWeb",
+      "RelativePath": "Images/Products/00ba1066-042d-433e-90c3-4c650c7c2f71.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\00ba1066-042d-433e-90c3-4c650c7c2f71.webp"
+    },
+    {
+      "Identity": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\wwwroot\\Images\\Products\\2a01324d-7924-45df-8f76-38d6c90b19da.jpg",
+      "SourceId": "BookStoreWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\wwwroot\\",
+      "BasePath": "_content/BookStoreWeb",
+      "RelativePath": "Images/Products/2a01324d-7924-45df-8f76-38d6c90b19da.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\2a01324d-7924-45df-8f76-38d6c90b19da.jpg"
     },
     {
       "Identity": "D:\\arvind\\coding\\dot-net-crud\\bookStoreWeb\\wwwroot\\Images\\Products\\bd8eaafe-ff8f-4435-84f5-cc5f76c6718c.jpg",

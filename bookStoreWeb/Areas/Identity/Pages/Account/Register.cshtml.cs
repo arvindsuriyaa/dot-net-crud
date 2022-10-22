@@ -10,6 +10,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
+using BookStoreWeb.data.Repository.IRepository;
 using BookStoreWeb.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
@@ -33,6 +34,7 @@ namespace BookStoreWeb.Areas.Identity.Pages.Account
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IUnitOfWork _unitofwork;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
@@ -40,9 +42,11 @@ namespace BookStoreWeb.Areas.Identity.Pages.Account
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender,
-            RoleManager<IdentityRole> roleManager
+            RoleManager<IdentityRole> roleManager,
+            IUnitOfWork unitofwork
             )
         {
+            _unitofwork = unitofwork;
             _roleManager = roleManager;
             _userManager = userManager;
             _userStore = userStore;
@@ -111,8 +115,11 @@ namespace BookStoreWeb.Areas.Identity.Pages.Account
             public string? State { get; set; }
             public string? PostalCode { get; set; }
             public string? Role { get; set; }
+            public int? CompanyId { get; set; }
             [ValidateNever]
             public IEnumerable<SelectListItem> RoleList { get; set; }
+            [ValidateNever]
+            public IEnumerable<SelectListItem> CompanyList{ get; set; }
 
         }
 
@@ -135,7 +142,12 @@ namespace BookStoreWeb.Areas.Identity.Pages.Account
                 {
                     Text = i,
                     Value = i
-                })
+                }),
+                CompanyList=_unitofwork.Company.GetAll().Select(i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                }),
             };
         }
 
@@ -152,14 +164,26 @@ namespace BookStoreWeb.Areas.Identity.Pages.Account
                 user.Name = Input.Name;
                 user.StreetAddress = Input.StreetAddress;
                 user.State = Input.State;
-                user.PostalCode= Input.PostalCode;
+                user.PostalCode = Input.PostalCode;
                 user.Name = Input.Name;
+                if (Input.Role == "Company")
+                {
+                    user.CompanyId=Input.CompanyId;
+                }
+
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-
+                    if (Input.Role == null)
+                    {
+                        await _userManager.AddToRoleAsync(user, "Individual");
+                    }
+                    else
+                    {
+                        await _userManager.AddToRoleAsync(user, Input.Role);
+                    }
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookStoreWeb.Data.Repository.IRepository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,10 @@ namespace BookStoreWeb.data.Repository.IRepository
         ICoverType CoverType { get; }
         IProductRepository Products { get; }
         ICompany Company { get; }
+        IApplicationUsersRepo ApplicationUsers { get; }
+        IShoppingCartRepo ShoppingCart { get; }
+        IOrderDetailRepository OrderDetail { get; }
+        IOrderHeaderRepository OrderHeader { get; }
 
     }
 }

@@ -16,6 +16,9 @@ namespace BookStoreWeb.Data
         public DbSet<ProductModel> Products { get; set; }
         public DbSet<ApplicationUsers> ApplicationUsers{ get; set; }
         public DbSet<CompanyModel> Company{ get; set; }
+        public DbSet<ShoppingCart> ShoppingCarts{ get; set; }
+        public DbSet<OrderDetail> OrderDetails{ get; set; }
+        public DbSet<OrderHeader> OrderHeaders { get; set; }
 
     }
 }
